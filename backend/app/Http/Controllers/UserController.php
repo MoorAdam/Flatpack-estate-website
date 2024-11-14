@@ -11,7 +11,8 @@ use Illuminate\Support\Facades\Validator;
 
 class UserController extends Controller
 {
-    function getUserNameAndEmail($user_id){
+    public function getUserNameAndEmail($user_id)
+    {
         $id = $user_id;
 
         $user = User::select('id', 'name', 'email')->where('id', $id)->first();
@@ -25,7 +26,7 @@ class UserController extends Controller
         );
     }
 
-    function userLogin(Request $request)
+    public function userLogin(Request $request)
     {
         try {
             $validator = Validator::make($request->all(), [
@@ -60,7 +61,8 @@ class UserController extends Controller
                     'token' => $user->createToken('API TOKEN', ['server-update'])->plainTextToken,
                     'username' => $user->name,
                     'id' => $user->id
-                ], 200
+                ],
+                200
             );
         } catch (\Throwable $th) {
 
@@ -70,7 +72,8 @@ class UserController extends Controller
                 [
                     'status' => false,
                     'message' => "Server side error!"
-                ], 500
+                ],
+                500
             );
         }
 
@@ -88,7 +91,7 @@ class UserController extends Controller
             'password' => 'required|string|min:6|confirmed',
         ]);
 
-        if($validator->fails()){
+        if ($validator->fails()) {
             return response()->json([
                 'status' => false,
                 'message' => 'validation error',
@@ -101,7 +104,8 @@ class UserController extends Controller
                 [
                 'status' => false,
                 'message' => 'A user with this email already exists!'
-                ], 409
+                ],
+                409
             );
         }
 
@@ -111,10 +115,11 @@ class UserController extends Controller
             'status' => true,
             'message' => 'Registration successful!',
             'newUserId' => $newUser->id
-            ],201);
+            ], 201);
     }
 
-    public function userLogout(Request $request) {
+    public function userLogout(Request $request)
+    {
         if (Auth::check()) {
             // Get the currently authenticated user's token (Passport or Sanctum)
             $token = $request->user()->currentAccessToken();

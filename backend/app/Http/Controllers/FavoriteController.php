@@ -21,7 +21,8 @@ class FavoriteController extends Controller
 
         return response()->json($favorites);
     }
-    public function addFavorite(Request $request){
+    public function addFavorite(Request $request)
+    {
         $id = \auth('sanctum')->id();
         $request->validate([
 //            'user_id' => 'required|exists:users,id',
@@ -40,7 +41,8 @@ class FavoriteController extends Controller
 
         return response()->json(['message' => 'Property added to favorites'], 201);
     }
-    public function removeFavorite(Request $request){
+    public function removeFavorite(Request $request)
+    {
         $id = \auth('sanctum')->id();
         $request->validate([
 //            'user_id' => 'required|exists:users,id',

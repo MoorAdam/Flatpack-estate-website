@@ -10,7 +10,8 @@ class ImageController extends Controller
 {
     protected ImageService $imageService;
 
-    public function __construct(){
+    public function __construct()
+    {
         $this->imageService = new ImageService();
     }
     public function store(Request $request)
@@ -20,25 +21,25 @@ class ImageController extends Controller
            'name' => 'required',
             'property_id' => 'required|exists:properties,id',
         ]);
-            $success = $this->imageService->upload($request);
+        $success = $this->imageService->upload($request);
 
-            if($success){
-                return response()->json([
-                    'success' => true,
-                    'message' => 'Image Uploaded',
-                    'image'=> $request->file('image_path'),
-                ],200);
-            }else{
-                return response()->json([
-                    'success' => false,
-                    'message' => 'Image not Uploaded',
+        if ($success) {
+            return response()->json([
+                'success' => true,
+                'message' => 'Image Uploaded',
+                'image' => $request->file('image_path'),
+            ], 200);
+        } else {
+            return response()->json([
+                'success' => false,
+                'message' => 'Image not Uploaded',
 
-                ],500);
-            }
+            ], 500);
+        }
     }
     public function getFirstPictures($property_id)
     {
-       $image = $this->imageService->getIndexPictures($property_id);
+        $image = $this->imageService->getIndexPictures($property_id);
 
         if (!$image) {
             return response()->json([
@@ -55,14 +56,15 @@ class ImageController extends Controller
         ], 200);
     }
 
-    public function getImages($property_id){
+    public function getImages($property_id)
+    {
         $images[] = $this->imageService->getPictures($property_id);
-        if($images){
+        if ($images) {
             return response()->json([
                 'success' => true,
                 'images' => $images,
-            ],200);
-        }else{
+            ], 200);
+        } else {
             return response()->json([
                 'success' => false,
                 'message' => 'No image found for the given property ID.'

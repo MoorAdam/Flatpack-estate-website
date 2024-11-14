@@ -10,10 +10,11 @@ class PropertyService
 {
     public function getAll()
     {
-           return  Property::all();
+        return  Property::all();
     }
 
-    public function search(Request $request){
+    public function search(Request $request)
+    {
         $title = $request->input('title');
         $description = $request->input('description');
         $size = $request->input('size');
@@ -133,9 +134,10 @@ class PropertyService
         return $property;
     }
 
-    public function delete($id){
+    public function delete($id)
+    {
 
-       return Property::where('id', $id)->delete();
+        return Property::where('id', $id)->delete();
 
     }
 

@@ -1,97 +1,202 @@
-# El Proyecte Grande - Design
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/github_username/repo_name">
+    <img src="/readme%20images/project%20logo.png" alt="Logo" width="150" height="150">
+  </a>
 
-## Story
+<h3 align="center">Flatpack - Estate websop</h3>
 
-As your Codecool Journey comes closer to its conclusion, the time has come for a final Teamwork Project, 
-that will put to test all of the programming skills you've obtained so far (and some new ones you will learn on the way)!
-
-You have the freedom of choosing your teammates (assemble a team of 3-4 students) and the project's topic this time.
-Think of an app that you would find useful in your daily activities, a tool that an employee of a certain industry might crave,
-a fun game or something completely out of the box.
-
-This project is meant to last until the end of the course. While Codecool will not give you any direct tasks to fulfill regarding your project, 
-during each sprint,you and your team are expected to make incremental changes in a Scrum way, developing the project further and further,
-adding new features, technologies, etc.
-
-***¡Comience El Proyecte Grande!***
-
-## What are you going to learn?
-
-- how to design IT products
-- how to design applications
-- how to write a Product Design Document
-- how to write an Application Design Document
-- how a Design Critique looks like
-- how to showcase product designs and ideas without actually making one
-
-## Tasks
-
-1. The first phase/sprint of El Proyecte Grande focuses on designing the product, before the development work begins.
-    - All the requirements from tasks below are fulfilled during this sprint.
-    - During this phase, the team DOES NOT work on the project in a technical manner. In other words - not a single line of code is written during this sprint.
-
-2. Assemble a Scrum team for your project.
-    - The team consists of 3-4 students, including yourself.
-    - The team has a Scrum Master and a Project Owner (both roles cannot be taken by the same person).
-    - The team has selected a mentor, that will serve as a dedicated Project Mentor.
-
-3. Create a High Level Product Design.
-    - A document is created (in Word, Google Docs or Confluence) that serves as a Product Design Document (PDD).
-    - PDD is not a technical documentation. It serves as a general concept/idea for the Product and answers some important business questions. The usage of technical language in PDD is limited, so that a non-technical person can also read and understand it.
-    - PDD describes the Product and answers the following questions:
-  - What problem does the Product solve?
-  - What is the target audience for this Product?
-  - What are the target platforms for this Product (desktop, mobile, web, etc)?
-  - What business model would fit your Product? Free to use, in app purchases, pay to use, subscription?
-
-4. Submit your PDD to critique by your Project Mentor
-    - Team's Product Owner arranges a Product Design Critique with the Team's Project mentor.
-    - The team presents their Product Design and describes ideas to the Project Mentor.
-    - The team answers all questions the Project Mentor asks regarding the Product.
-    - The team receives feedback from the Project Mentor and draws conclusions from it, regarding what is missing or what could be improved in their Product Design.
-    - Based on the Project Mentor's feedback, improvements to the PDD are made.
-    - Team's Product Owner arranges a follow-up meeting with the Team's Project mentor,  during which they present the improved version of the design.
-
-5. Create a High Level Application Design.
-    - A document is created (in Word, Google Docs or Confluence) that serves as an Application Design Document (ADD).
-    - ADD is a technical documentation, containing details about Application's architecture, design patterns, utilized technologies, etc. It does not focus about the purpose of the Product or its ideas, but on the implementation with use of programming tools.
-    - ADD describes the Application and answers the following questions:
-  - What architecture and/or design patters the Application is going to use? Include some UMLs, flowcharts, sketches, etc.
-  - What is going to be the Application's main backend technology? [ASP.NET, Java Spring, Python Django, NodeJS, etc]
-  - What is going to be the Application's main frontend technology? [Razor Pages, Thymeleaf, Jinja, Angular, etc]
-  - What is going to be the Application's main database solution? [Microsoft SQL Server, Oracle MySQL, PostgreSQL, NoSQL solution, etc]
-  - Are there going to be any additional technologies used by the Application?
-  - Propose some early technical concepts for some of the major features of the Application.
-
-6. Submit your ADD to critique by your Project Mentor
-    - Team's Product Owner arranges an Application Design Critique with the Team's Project mentor.
-    - The team presents their Application Design and describes ideas to the Project Mentor.
-    - The team answers all questions the Project Mentor asks regarding the Application.
-    - The team receives feedback from the Project Mentor and draws conclusions from it, regarding what is missing or what could be improved in their Application Design.
-    - Based on the Project Mentor's feedback, improvements to the ADD are made.
-    - Team's Product Owner arranges a follow-up meeting with the Team's Project mentor,  during which they present the improved version of the design.
-
-7. Prepare a Product Pitch as your demo presentation for this sprint
-    - A presentation is created (in PowerPoint, Slides, etc) for the demo's purpose.
-    - The presentation doesn't directly contain the PDD and the ADD, but summarizes them in a shorter and more comprehensive form.
-    - The presentation consists of mostly images (sketches, mockups, notes) rather than plain text.
-    - The presentation is designed and presented in a way, that would convince the audience that the Product you've envisioned is going to be great, useful and innovative. The audience should be willing to use the Product once it's available.
-    - While it's mostly the Product Owner's role to present the Product to the audience, each team member has a role during the presentation.
-    - The team answers all the questions the audience has to ask about their Product.
-    - The team collects feedback from the audience about their Product and draws conclusions from it.
-
-## General requirements
-
-None
-
-## Hints
+  <p align="center">
+    Flatpack aims to create a simple website, where users can buy and sell properties, similar to product webshops
+  </p>
+</div>
 
 
 
-## Background materials
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#developers">Contributing</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-- <i class="far fa-exclamation"></i> [Definition of Done](project/curriculum/materials/pages/methodology/definition-of-done.md)
-- <i class="far fa-exclamation"></i> [Product Design](https://www.smashingmagazine.com/2018/01/comprehensive-guide-product-design/)
-- <i class="far fa-exclamation"></i> [Application Design](https://xd.adobe.com/ideas/principles/web-design/web-page-design/)
-- <i class="far fa-exclamation"></i> [Agile Project Management](https://journey.code.cool/v2/project/curriculum/materials/pages/methodology/agile-project-management.md)
-- <i class="far fa-exclamation"></i> [Sales Pitch Examples](https://www.saleshacker.com/sales-pitch-examples/)
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+![Product Main Screen Shot](/readme%20images/main%20screenshot.png)
+
+In this application, users are able to sell, buy and brows properties and estates, 
+similar to how it works on webshops.
+The user can create an account, which they can use to buy, sell, brows and save estates.  
+The application's backend has been written in PHP, using the Laravel framework.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+### Built With
+
+* [![React][React.js]][React-url]
+* [![Laravel][Laravel.com]][Laravel-url]
+* [![Vite][Vite]][Vite-url]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## Getting Started
+### Prerequisites
+
+This project has been containerized, using Docker. You will need the Docker desktop ap, in order to run it.
+
+### Installation
+
+1. Get a free API Key at [https://example.com](https://example.com)
+2. Clone the repo
+   ```sh
+   git clone https://github.com/github_username/repo_name.git
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Enter your API in `config.js`
+   ```js
+   const API_KEY = 'ENTER YOUR API';
+   ```
+5. Change git remote url to avoid accidental pushes to base project
+   ```sh
+   git remote set-url origin github_username/repo_name
+   git remote -v # confirm the changes
+   ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+On the homepage, you can see 3 main parts. 
+* The __menu bar__ :You can access certain functionalities from this bar. 
+For example, logging in, registering, return to home.<br>
+![menubar](/readme%20images/logged%20out%20menu%20bar.png)<br>
+When logged in, there are further options, like __My favorites__, __My properties__ and __Upload__
+![menubar](/readme%20images/logged%20in%20menu%20bar.png)
+* The __search parameters__: Search parameters help with finding the right estate. There are several properties to search by (see the screenshot)
+<br>Default:
+![search-parameters](/readme%20images/default%20search%20parameters.png)
+<br>With parameters:
+![search-parameters](/readme%20images/search%20parameters%20example.png)
+* The __estate list__: This is the list that shows the right estates, depending on the search parameters. By default, it shows all the available estates on the site
+![estate-list](/readme%20images/main%20screenshot.png)
+* The __estate card__: There are several estate cards on the site, depending on the search result. They display a few properties of the estates, a main screenshot (generated estates have the fallback images) and the __Read more__ button. It will open the estate's page
+
+The __Estate page__ shows all the information about the estate. For example,
+* Images
+* Seller
+* Price
+* Size
+* Rooms
+* Type (home, flat)
+* etc...
+
+Here, the user can buy, or add the estate to its favorites when logged in
+
+![estate-properties](/readme%20images/estate%20properties%20example.png)
+
+When logged in clicking the __My favorites__ button will display all the users favorite estates
+
+![favorites](/readme%20images/favorites.png)
+
+When logged in, clicking on the __Upload__ button, will take the user to a page, where they can submit their own estates
+![upload-main](/readme%20images/upload.png)
+Here, the user is required to put in all information and properties about the estate. 
+<br>
+<br>
+After pressing next, the user can add multiple images to be displayed on the site
+![upload-images](/readme%20images/upload%20images.png)
+
+When the user is finished, this estate will be displayed on the site. The user can also see their properties, by clicking the __My properties__ button in the menu bar.
+![menu-bar-my-properties](/readme%20images/my-properties.png)
+
+When the user who owns the estate opens the estate's site, there will be extra options next to the __buy__ button. These new options will allow the user to remove or edit the estate (In the current state, these options are NON FUNCTIONAL)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- DEVELOPERS -->
+## Developers
+
+* Adam Moór
+* Attila Gonda
+* Patrik Bódis
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTACT -->
+## Contact
+
+Adam Moór - [GitHub](https://github.com/MoorAdam) - moor.adam.is@gmail.com
+
+Project Link: [Flatpack-estate-webshop](https://github.com/MoorAdam/Flatpack-estate-website)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
+[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
+[forks-url]: https://github.com/github_username/repo_name/network/members
+[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
+[stars-url]: https://github.com/github_username/repo_name/stargazers
+[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
+[issues-url]: https://github.com/github_username/repo_name/issues
+[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
+[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/linkedin_username
+[product-screenshot]: images/screenshot.png
+[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[Next-url]: https://nextjs.org/
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
+[Vue-url]: https://vuejs.org/
+[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
+[Angular-url]: https://angular.io/
+[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
+[Svelte-url]: https://svelte.dev/
+[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
+[Laravel-url]: https://laravel.com
+[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+[Bootstrap-url]: https://getbootstrap.com
+[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
+[JQuery-url]: https://jquery.com 
+[Vite-url]: https://vite.dev
+[Vite]: https://img.shields.io/badge/vite-20232A?style=for-the-badge&logo=vite&logoColor=61DgFB
+[GitHub]: https://img.shields.io/badge/GitHub-gray?style=flat-square&logo=github&logoColor=white&logoSize=60px&labelColor=black&color=black
