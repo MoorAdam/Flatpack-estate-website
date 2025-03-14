@@ -8,7 +8,7 @@
 <h3 align="center">Flatpack - Estate websop</h3>
 
   <p align="center">
-    Flatpack aims to create a simple website, where users can buy and sell properties, similar to product webshops
+    The Flatpack team project aims to create a simple website, where users can buy and sell properties, similar to product webshops
   </p>
 </div>
 
